@@ -1,4 +1,4 @@
-import Header from "./Hedaer";
+import Header from "./hedaer";
 import Footer from "./footer";
 
 export default function Layout({ children }) {

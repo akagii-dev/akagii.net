@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Pagination from '../../components/pagination';
-import PostCard from '../../components/PostCard';
+import PostCard from '../../components/postcard';
 
 const PAGE_SIZE = 3;
 
