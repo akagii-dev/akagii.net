@@ -5,7 +5,7 @@ const Header = () => {
     <header className="sticky top-0 border-b z-10 bg-white">
       <div className="max-w-4xl mx-auto flex justify-between items-center h-12">
         <Link href="/" className="ml-6">
-          <Image src={"/home.svg"} width={45} height={45} alt/>
+          <Image src={"/home.svg"} width={30} height={30} alt="home"/>
         </Link>
         <ul className="flex">
           <li>
