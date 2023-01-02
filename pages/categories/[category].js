@@ -32,7 +32,7 @@ export const getStaticProps = ({ params }) => {
 };
 
 export const getStaticPaths = () => {
-  const categories = ['react', 'laravel'];
+  const categories = ['react', 'laravel', '雑談'];
   const paths = categories.map((category) => ({ params: { category } }));
 
   return {
