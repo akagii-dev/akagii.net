@@ -5,16 +5,16 @@ const Header = () => {
     <header className="sticky top-0 border-b z-10 bg-white">
       <div className="max-w-4xl mx-auto flex justify-between items-center h-12">
         <Link href="/" className="ml-6">
-          <Image src={"/home.svg"} width={45} height={45} />
+          <Image src={"/home.svg"} width={45} height={45} alt="Home"/>
         </Link>
         <ul className="flex">
           <li>
-            <a href="https://misskey.io/@muf" target="_blank">
-              <Image src={"/misskey.png"} width={45} height={45} className="block p-2"/>
+            <a href="https://misskey.io/@muf" target="_blank" rel="noreferrer" >
+              <Image src={"/misskey.png"} width={45} height={45} className="block p-2" alt="missey"/>
             </a>
           </li>
           <li>
-            <a href="https://github.com/muffin1000" target="_blank">
+            <a href="https://github.com/muffin1000" target="_blank" rel="noreferrer" alt="github">
               <Image src={"/github.svg"} width={45} height={45} className="block p-2"/>
             </a>
           </li>
