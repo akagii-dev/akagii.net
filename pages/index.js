@@ -19,7 +19,7 @@ export const getStaticProps = () => {
             frontMatter: data,
             slug,
         }
-    })
+    }).filter((post) => (post = !post.frontMatter.categories.includes('独り言')));
 
     const sortedPosts = posts.sort((postA, postB) =>
         new Date(postA.frontMatter.date) > new Date(postB.frontMatter.date) ? -1 : 1
