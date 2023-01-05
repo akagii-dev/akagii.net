@@ -1,7 +1,7 @@
 ---
 title: 'Hello World!🥳'
 date: '2023/01/02'
-image: next.svg
+image: next.png
 categories: ['雑談']
 description: 'Hello World'
 ---
