@@ -6,7 +6,7 @@ const PostCard = ({ post }) => {
     <Link href={`/posts/${post.slug}`}>
         <div className="border rounded-lg">
           <Image
-            src={`/${post.frontMatter.image}`}
+            src={`/posts/thumbnails/${post.frontMatter.image}`}
             width={1200}
             height={700}
             alt={post.frontMatter.title}

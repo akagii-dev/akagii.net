@@ -1,8 +1,8 @@
 ---
 title: 'Proxyサーバー構築'
 date: '2023/01/05'
-image: posts/proxy server.png
-categories: ['Tech']
+image: squid.png
+categories: ['Technology']
 description: 'Proxyサーバー構築の方法'
 ---
 
