@@ -32,7 +32,7 @@ export const getStaticProps = ({ params }) => {
 };
 
 export const getStaticPaths = () => {
-  const categories = ['雑談', 'Tech'];
+  const categories = ['雑談', '独り言', 'Technology'];
   const paths = categories.map((category) => ({ params: { category } }));
 
   return {
