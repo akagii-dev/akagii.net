@@ -1,8 +1,9 @@
 ---
 title: 'Hello World!🥳'
-date: '2023-01-02'
+date: '2023/01/02'
 image: next.svg
 categories: ['雑談']
+description: 'Hello World'
 ---
 
 ## 目次
@@ -27,4 +28,3 @@ console.log("Hello World!")
 
 お気に入り
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7rhPtZ2nmgkrv6MCCDF2WU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-

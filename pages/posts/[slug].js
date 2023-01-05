@@ -13,6 +13,7 @@ import rehypeReact from 'rehype-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { createElement, Fragment } from 'react';
+import { NextSeo } from 'next-seo';
 
 export async function getStaticProps({ params }) {
     const file = fs.readFileSync(`posts/${params.slug}.md`, 'utf-8');
@@ -33,7 +34,7 @@ export async function getStaticProps({ params }) {
         })
         .use(rehypeStringify, { allowDangerousHtml: true })
         .process(content);
-    return { props: { frontMatter: data, content: result.toString() } };
+    return { props: { frontMatter: data, content: result.toString() , slug: params.slug} };
 }
 
 export async function getStaticPaths() {
@@ -86,8 +87,28 @@ const toReactNode = (content) => {
       })
       .processSync(content).result;
   };
-const Post = ({ frontMatter, content }) => {
+
+const Post = ({ frontMatter, content, slug }) => {
     return (
+        <>
+            <NextSeo
+            title={frontMatter.title}
+            description={frontMatter.description}
+            openGraph={{
+                type: 'website',
+                url: `https://akagii.net/${slug}`,
+                title: frontMatter.title,
+                description: frontMatter.description,
+                images: [
+                    {
+                        url: `https://akagii.net/${frontMatter.image}`,
+                        width: 1200,
+                        height: 700,
+                        alt: frontMatter.title
+                    }
+                ]
+            }}
+            />
         <div className="prose prose-lg max-w-none">
             <h1 className="mt-12">{frontMatter.title}</h1>
             <span>{frontMatter.date}</span>
@@ -102,6 +123,7 @@ const Post = ({ frontMatter, content }) => {
             </div>
             {toReactNode(content)}
         </div>
+        </>
 )}
 
 export default Post;
