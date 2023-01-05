@@ -48,4 +48,4 @@ curl -fsSL https://tailscale.com/install.sh | sh
 
 ## クライアント側の設定
 [Tailscaleをダウンロード](https://tailscale.com/download/)して、Chromeなどで使用する場合は[SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)を使用する。</br>
-この場合、設定画面のServerはSquidを設定したPCのTailscaleのIPアドレスまたは`Machine name`を、Portには3128をする。
+この場合、設定画面のServerはSquidを設定したPCのTailscaleのIPアドレスまたはMachine nameを、Portには3128をする。
