@@ -96,12 +96,12 @@ const Post = ({ frontMatter, content, slug }) => {
             description={frontMatter.description}
             openGraph={{
                 type: 'website',
-                url: `https://akagii.net/posts/thumbnails/${slug}`,
+                url: `https://akagii.net/${slug}`,
                 title: frontMatter.title,
                 description: frontMatter.description,
                 images: [
                     {
-                        url: `https://akagii.net/${frontMatter.image}`,
+                        url: `https://akagii.net/posts/thumbnails/${frontMatter.image}`,
                         width: 1200,
                         height: 700,
                         alt: frontMatter.title
