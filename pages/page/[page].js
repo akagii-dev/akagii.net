@@ -20,7 +20,7 @@ export async function getStaticProps({ params }) {
         frontMatter: data,
         slug,
       };
-    });
+    }).filter((post) => (post = !post.frontMatter.categories.includes('独り言')));
   
     const pages = range(1, Math.ceil(posts.length / PAGE_SIZE));
   
